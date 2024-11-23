@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: client-application
+  security:
+    oauth2:
+      client:
+        registration:
+          oauth2-provider:
+            provider: oauth2-provider
+            client-id: oauth2
+            client-secret: oauth2-secrete
+            authorization-grant-type: client_credentials
+            scope: read
+        provider:
+          oauth2-provider:
+            token-uri: http://localhost:9000/oauth2/token
